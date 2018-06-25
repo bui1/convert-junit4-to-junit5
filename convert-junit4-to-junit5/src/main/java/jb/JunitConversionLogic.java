@@ -24,8 +24,6 @@ public class JunitConversionLogic {
             result = convertClassNames(result);
             result = addAssertThatImport(result);
 
-            System.out.println(result);
-
             // easier to do move parameter order with AST parser
             CompilationUnit cu = JavaParser.parse(new ByteArrayInputStream(result.getBytes()));
             convertAssertionsAndAssumptionMethodParamOrder(cu);
@@ -56,6 +54,8 @@ public class JunitConversionLogic {
         result = replaceUnlessFollowedByEscapingPackageName(result, "@Before", "All", "@BeforeEach");
         result = result.replace("@AfterClass", "@AfterAll");
         result = replaceUnlessFollowedByEscapingPackageName(result, "@After", "All", "@AfterEach");
+
+        result = result.replace("import static org.mockito.Matchers.any;", "");
 
         result = result.replace("org.junit.jupiter.api.runner.RunWith", "org.junit.jupiter.api.extension.ExtendWith");
         result = result.replace("@RunWith(MockitoJUnitRunner.class)",

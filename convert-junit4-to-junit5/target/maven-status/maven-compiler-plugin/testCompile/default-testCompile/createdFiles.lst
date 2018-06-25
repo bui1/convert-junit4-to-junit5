@@ -1,0 +1,6 @@
+jb/JunitConversionLogicTest.class
+jb/MoveAssertionMessageTest.class
+jb/AssertionsHelper.class
+jb/RegExHelperTest.class
+jb/ScanAndUpdateDirIT.class
+jb/UpdatesOnChangeIT.class
