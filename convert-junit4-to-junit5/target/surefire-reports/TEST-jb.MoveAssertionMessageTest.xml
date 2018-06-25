@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="jb.MoveAssertionMessageTest" time="0.128" tests="30" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="jb.MoveAssertionMessageTest" time="0.101" tests="30" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib"/>
@@ -61,33 +61,33 @@
     <property name="sun.cpu.isalist" value=""/>
   </properties>
   <testcase name="notAnAssertion" classname="jb.MoveAssertionMessageTest" time="0.003"/>
-  <testcase name="commaInStringInsideMessage" classname="jb.MoveAssertionMessageTest" time="0.005"/>
-  <testcase name="commaInStringButNoMessage" classname="jb.MoveAssertionMessageTest" time="0.005"/>
+  <testcase name="commaInStringInsideMessage" classname="jb.MoveAssertionMessageTest" time="0.004"/>
+  <testcase name="commaInStringButNoMessage" classname="jb.MoveAssertionMessageTest" time="0.002"/>
   <testcase name="whiteSpaceForTwoParams" classname="jb.MoveAssertionMessageTest" time="0.003"/>
-  <testcase name="whiteSpaceForThreeParams" classname="jb.MoveAssertionMessageTest" time="0.004"/>
+  <testcase name="whiteSpaceForThreeParams" classname="jb.MoveAssertionMessageTest" time="0.002"/>
   <testcase name="notEnoughParameters" classname="jb.MoveAssertionMessageTest" time="0.002"/>
-  <testcase name="commaAndEscapedQuoteInStringInsideMessage" classname="jb.MoveAssertionMessageTest" time="0.004"/>
-  <testcase name="tooManyParameters" classname="jb.MoveAssertionMessageTest" time="0.003"/>
-  <testcase name="assertThatRemainsUnchanged" classname="jb.MoveAssertionMessageTest" time="0.003"/>
-  <testcase name="methodsInParams" classname="jb.MoveAssertionMessageTest" time="0.005"/>
+  <testcase name="commaAndEscapedQuoteInStringInsideMessage" classname="jb.MoveAssertionMessageTest" time="0.002"/>
+  <testcase name="tooManyParameters" classname="jb.MoveAssertionMessageTest" time="0.002"/>
+  <testcase name="assertThatRemainsUnchanged" classname="jb.MoveAssertionMessageTest" time="0.002"/>
+  <testcase name="methodsInParams" classname="jb.MoveAssertionMessageTest" time="0.003"/>
+  <testcase name="otherMethodNamesDoNotChangeParamOrder" classname="otherMethodNamesDoNotChangeParamOrder(String)" time="0.003"/>
   <testcase name="otherMethodNamesDoNotChangeParamOrder" classname="otherMethodNamesDoNotChangeParamOrder(String)" time="0.002"/>
   <testcase name="otherMethodNamesDoNotChangeParamOrder" classname="otherMethodNamesDoNotChangeParamOrder(String)" time="0.003"/>
-  <testcase name="otherMethodNamesDoNotChangeParamOrder" classname="otherMethodNamesDoNotChangeParamOrder(String)" time="0.004"/>
-  <testcase name="message" classname="jb.MoveAssertionMessageTest" time="0.003"/>
+  <testcase name="message" classname="jb.MoveAssertionMessageTest" time="0.002"/>
+  <testcase name="allJunit4MethodNamesReorderExpectedActual" classname="allJunit4MethodNamesReorderExpectedActual(String)" time="0.003"/>
   <testcase name="allJunit4MethodNamesReorderExpectedActual" classname="allJunit4MethodNamesReorderExpectedActual(String)" time="0.003"/>
   <testcase name="allJunit4MethodNamesReorderExpectedActual" classname="allJunit4MethodNamesReorderExpectedActual(String)" time="0.002"/>
   <testcase name="allJunit4MethodNamesReorderExpectedActual" classname="allJunit4MethodNamesReorderExpectedActual(String)" time="0.002"/>
   <testcase name="allJunit4MethodNamesReorderExpectedActual" classname="allJunit4MethodNamesReorderExpectedActual(String)" time="0.003"/>
-  <testcase name="allJunit4MethodNamesReorderExpectedActual" classname="allJunit4MethodNamesReorderExpectedActual(String)" time="0.003"/>
-  <testcase name="concatInParams" classname="jb.MoveAssertionMessageTest" time="0.003"/>
+  <testcase name="concatInParams" classname="jb.MoveAssertionMessageTest" time="0.002"/>
   <testcase name="newLines" classname="jb.MoveAssertionMessageTest" time="0.002"/>
   <testcase name="noMessage" classname="jb.MoveAssertionMessageTest" time="0.002"/>
+  <testcase name="allJunit4MethodNamesReorderSingleParam" classname="allJunit4MethodNamesReorderSingleParam(String)" time="0.001"/>
+  <testcase name="allJunit4MethodNamesReorderSingleParam" classname="allJunit4MethodNamesReorderSingleParam(String)" time="0.001"/>
   <testcase name="allJunit4MethodNamesReorderSingleParam" classname="allJunit4MethodNamesReorderSingleParam(String)" time="0.002"/>
-  <testcase name="allJunit4MethodNamesReorderSingleParam" classname="allJunit4MethodNamesReorderSingleParam(String)" time="0.002"/>
-  <testcase name="allJunit4MethodNamesReorderSingleParam" classname="allJunit4MethodNamesReorderSingleParam(String)" time="0.002"/>
-  <testcase name="allJunit4MethodNamesReorderSingleParam" classname="allJunit4MethodNamesReorderSingleParam(String)" time="0.002"/>
-  <testcase name="allJunit4MethodNamesReorderSingleParam" classname="allJunit4MethodNamesReorderSingleParam(String)" time="0.003"/>
   <testcase name="allJunit4MethodNamesReorderSingleParam" classname="allJunit4MethodNamesReorderSingleParam(String)" time="0.002"/>
   <testcase name="allJunit4MethodNamesReorderSingleParam" classname="allJunit4MethodNamesReorderSingleParam(String)" time="0.002"/>
   <testcase name="allJunit4MethodNamesReorderSingleParam" classname="allJunit4MethodNamesReorderSingleParam(String)" time="0.001"/>
+  <testcase name="allJunit4MethodNamesReorderSingleParam" classname="allJunit4MethodNamesReorderSingleParam(String)" time="0.002"/>
+  <testcase name="allJunit4MethodNamesReorderSingleParam" classname="allJunit4MethodNamesReorderSingleParam(String)" time="0.002"/>
 </testsuite>

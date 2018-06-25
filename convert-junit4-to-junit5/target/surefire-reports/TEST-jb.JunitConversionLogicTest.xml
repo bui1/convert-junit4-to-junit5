@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="jb.JunitConversionLogicTest" time="0.434" tests="23" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="jb.JunitConversionLogicTest" time="0.382" tests="23" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib"/>
@@ -60,27 +60,27 @@
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="singleAssertion" classname="jb.JunitConversionLogicTest" time="0.258"/>
-  <testcase name="specificStaticAssertions" classname="jb.JunitConversionLogicTest" time="0.007"/>
+  <testcase name="singleAssertion" classname="jb.JunitConversionLogicTest" time="0.221"/>
+  <testcase name="specificStaticAssertions" classname="jb.JunitConversionLogicTest" time="0.005"/>
   <testcase name="mutlipleAssertions" classname="jb.JunitConversionLogicTest" time="0.003"/>
   <testcase name="assertAfterCommentOnPreviousLine" classname="jb.JunitConversionLogicTest" time="0.012"/>
   <testcase name="specificFullyQualifiedStaticAssertions" classname="jb.JunitConversionLogicTest" time="0.005"/>
-  <testcase name="doNotUpdateIfAlreadyJupiter" classname="jb.JunitConversionLogicTest" time="0"/>
-  <testcase name="specificFullyQualifiedStaticAssumptions" classname="jb.JunitConversionLogicTest" time="0.003"/>
-  <testcase name="nonJunitMethodCall" classname="jb.JunitConversionLogicTest" time="0.002"/>
-  <testcase name="assertInFirstLineOfMethod" classname="jb.JunitConversionLogicTest" time="0.003"/>
+  <testcase name="doNotUpdateIfAlreadyJupiter" classname="jb.JunitConversionLogicTest" time="0.001"/>
+  <testcase name="specificFullyQualifiedStaticAssumptions" classname="jb.JunitConversionLogicTest" time="0.002"/>
+  <testcase name="nonJunitMethodCall" classname="jb.JunitConversionLogicTest" time="0.003"/>
+  <testcase name="assertInFirstLineOfMethod" classname="jb.JunitConversionLogicTest" time="0.002"/>
   <testcase name="newImportForAssertThat" classname="jb.JunitConversionLogicTest" time="0.004"/>
   <testcase name="importWildcardMainPackage" classname="jb.JunitConversionLogicTest" time="0.002"/>
   <testcase name="specificTestAnnotation" classname="jb.JunitConversionLogicTest" time="0.002"/>
   <testcase name="specificStaticFail" classname="jb.JunitConversionLogicTest" time="0.002"/>
-  <testcase name="specificStaticAssumptions" classname="jb.JunitConversionLogicTest" time="0.004"/>
+  <testcase name="specificStaticAssumptions" classname="jb.JunitConversionLogicTest" time="0.003"/>
   <testcase name="importWildcardStaticAssertions" classname="jb.JunitConversionLogicTest" time="0.002"/>
   <testcase name="importAlreadyPresentForAssertThat" classname="jb.JunitConversionLogicTest" time="0.003"/>
   <testcase name="importWildcardStaticAssumptions" classname="jb.JunitConversionLogicTest" time="0.002"/>
   <testcase name="newAnnotationNames" classname="newAnnotationNames(String, String)" time="0.016"/>
+  <testcase name="newAnnotationNames" classname="newAnnotationNames(String, String)" time="0.004"/>
   <testcase name="newAnnotationNames" classname="newAnnotationNames(String, String)" time="0.002"/>
   <testcase name="newAnnotationNames" classname="newAnnotationNames(String, String)" time="0.003"/>
   <testcase name="newAnnotationNames" classname="newAnnotationNames(String, String)" time="0.003"/>
-  <testcase name="newAnnotationNames" classname="newAnnotationNames(String, String)" time="0.002"/>
   <testcase name="assertThat" classname="jb.JunitConversionLogicTest" time="0.003"/>
 </testsuite>

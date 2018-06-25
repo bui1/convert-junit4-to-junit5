@@ -38,6 +38,7 @@ public class JunitConversionLogic {
         String result = originalText;
         result = result.replaceAll("org.junit.Assert.assertThat", "org.hamcrest.MatcherAssert.assertThat");
         result = result.replaceAll("org.junit.", "org.junit.jupiter.api.");
+
         return result;
     }
 
@@ -55,14 +56,14 @@ public class JunitConversionLogic {
         result = result.replace("@AfterClass", "@AfterAll");
         result = replaceUnlessFollowedByEscapingPackageName(result, "@After", "All", "@AfterEach");
 
-        result = result.replace("import static org.mockito.Matchers.any;", "");
+        result = result.replace("import static org.mockito.Matchers.any;", "import static org.mockito.Mockito.any;");
 
         result = result.replace("org.junit.jupiter.api.runner.RunWith", "org.junit.jupiter.api.extension.ExtendWith");
         result = result.replace("@RunWith(MockitoJUnitRunner.class)",
             "@ExtendWith(MockitoExtension.class)\n@MockitoSettings(strictness = Strictness.LENIENT)");
 
         result = result.replace("org.mockito.runners.MockitoJUnitRunner;",
-            "org.mockito.junit.jupiter.MockitoExtension;\nimport org.mockito.junit.jupiter.MockitoSettings;\nimport org.mockito.quality.Strictness;");
+            "org.mockito.junit.jupiter.MockitoExtension;\nimport org.mockito.junit.jupiter.MockitoSettings;\nimport org.mockito.quality.Strictness;\n");
         return result.replace("@Ignore", "@Disabled");
     }
 

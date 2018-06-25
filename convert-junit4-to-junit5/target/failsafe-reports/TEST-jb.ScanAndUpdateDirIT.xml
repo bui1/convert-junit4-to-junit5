@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="jb.ScanAndUpdateDirIT" time="0.324" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="jb.ScanAndUpdateDirIT" time="0.315" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib"/>
@@ -60,7 +60,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="directory" classname="jb.ScanAndUpdateDirIT" time="0.266"/>
+  <testcase name="directory" classname="jb.ScanAndUpdateDirIT" time="0.261"/>
   <testcase name="singleFile" classname="jb.ScanAndUpdateDirIT" time="0.007"/>
   <testcase name="nestedDirectories" classname="jb.ScanAndUpdateDirIT" time="0.008"/>
 </testsuite>
