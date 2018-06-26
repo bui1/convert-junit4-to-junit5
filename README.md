@@ -4,15 +4,18 @@ Note that IntelliJ has functionality to migrate from JUnit 4 to 5. I recommend t
 
 # Pre-reqs
 Before starting out, the program assumes you have:
-* Updated your Maven POM/Groovy build file/whatever to reference the new JUnit 5 jars
-* Migrated off JUnit 3.8. This program assumes you are on JUnit 4. JUnit 3.8 code will continue to work in JUnit 5. (as will JUnit 4 code.) But the goal of this program is to migrate JUnit 4 syntax to JUnit 5 syntax.
+* Updated your Maven POM/Groovy build file/Gradle/whatever to reference the new JUnit 5 jars
+* Migrated off JUnit 3.8. This program assumes you are on JUnit 4. JUnit 3.8 code will continue to work in JUnit 5. (as will JUnit 4 code.) **But the goal of this program is to migrate JUnit 4 syntax to JUnit 5 syntax.**
 
 # Running the program
-Pass the absolute path of the directory containing your tests (ex /my/dir/src/test/java) when running class jb.Updater. The program outputs the name of each file as it goes through them. It runs quickly. Under a few seconds for two thousand files.
-Then make manual edits at end (or rollback those test classes and deal with them later). In particular the following will not compile after running the program and require manually migration.
-1. Parameterized tests
-1. Tests that use expected parameter
-1. Tests that use timeout parameter
+1. Pass the absolute path of the directory containing your tests (ex /my/dir/src/test/java) when running class jb.Updater. 
+* Make sure to **maven clean install** it for the first time and for every time you make changes to the java files.
+* Running example) Inside the directory of where you saved the repo, *java -jar target/convert-junit4-to-to-junit5-0.0.1-SNAPSHOT.jar ~/git/project/src/test*
+2. The program outputs the name of each file as it goes through them. It runs quickly. Under a few seconds for two thousand files.
+3. Then make manual edits at end (or rollback those test classes and deal with them later). In particular the following will not compile after running the program and require manual migration.
+* Parameterized tests
+* Tests that use expected parameter
+* Tests that use timeout parameter
 
 
 # Side effects
