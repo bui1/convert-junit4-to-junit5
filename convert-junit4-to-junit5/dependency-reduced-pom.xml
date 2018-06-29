@@ -8,7 +8,7 @@
     <plugins>
       <plugin>
         <artifactId>maven-shade-plugin</artifactId>
-        <version>2.3</version>
+        <version>3.1.1</version>
         <executions>
           <execution>
             <phase>package</phase>
@@ -167,4 +167,3 @@
     <surefire.version>2.19.1</surefire.version>
   </properties>
 </project>
-
