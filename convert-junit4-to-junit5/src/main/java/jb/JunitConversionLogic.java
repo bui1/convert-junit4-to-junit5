@@ -60,7 +60,7 @@ public class JunitConversionLogic {
 
         result = result.replace("org.junit.jupiter.api.runner.RunWith", "org.junit.jupiter.api.extension.ExtendWith");
         result = result.replace("@RunWith(MockitoJUnitRunner.class)",
-            "@ExtendWith(MockitoExtension.class)\n@MockitoSettings(strictness = Strictness.LENIENT)");
+            "@ExtendWith(MockitoExtension.class)");
 
         result = result.replace("org.mockito.runners.MockitoJUnitRunner;",
             "org.mockito.junit.jupiter.MockitoExtension;\nimport org.mockito.junit.jupiter.MockitoSettings;\nimport org.mockito.quality.Strictness;\n");
