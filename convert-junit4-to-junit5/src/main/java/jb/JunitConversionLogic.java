@@ -63,7 +63,7 @@ public class JunitConversionLogic {
             "@ExtendWith(MockitoExtension.class)");
 
         result = result.replace("org.mockito.runners.MockitoJUnitRunner;",
-            "org.mockito.junit.jupiter.MockitoExtension;\nimport org.mockito.junit.jupiter.MockitoSettings;\nimport org.mockito.quality.Strictness;\n");
+            "org.mockito.junit.jupiter.MockitoExtension;");
         return result.replace("@Ignore", "@Disabled");
     }
 
